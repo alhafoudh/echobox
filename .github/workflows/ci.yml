@@ -30,6 +30,4 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags:
-            - alhafoudh/echobox:${{ github.sha }}
-            - alhafoudh/echobox:latest
+          tags: alhafoudh/echobox:${{ github.sha }} , alhafoudh/echobox:latest
