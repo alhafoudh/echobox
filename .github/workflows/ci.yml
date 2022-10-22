@@ -28,7 +28,7 @@ jobs:
 
       - name: Build and push the Docker image
         uses: docker/build-push-action@v3
-        platforms: linux/amd64,linux/arm64
         with:
           push: true
+          platforms: linux/amd64,linux/arm64
           tags: alhafoudh/echobox:${{ github.sha }} , alhafoudh/echobox:latest
